@@ -16,7 +16,11 @@ confflags = --disable-rpath --enable-sdl-dlopen \
             --enable-dga=no \
             --enable-video-x11-xv=no \
             --enable-video-x11-dgamouse=no \
-            --enable-video-caca
+            --enable-video-caca \
+            --disable-video-directfb \
+            --enable-video-kmsdrm \
+            --disable-kmsdrm-shared \
+            --disable-video-opengl
 
 # Only use NASM routines on x86 CPUs
 ifeq ($(DEB_HOST_ARCH_CPU),i386)
